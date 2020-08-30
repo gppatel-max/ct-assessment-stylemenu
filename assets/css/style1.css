@@ -5,7 +5,8 @@
     - cover background with the "map-bg.jpg" image in the images directory. 
 */
 body {
-    font: 18px'Lato';
+    font-family: "Lato";
+    font-size: 18px;
     background-image:url("../images/map-bg.jpg");
     
 }
@@ -36,8 +37,9 @@ h1 {
     Update the following ruleset (#menu) to accomplish the following:
         - Set the separator between the columns (the "column-rule") to be 2px dashed rosybrown. 
 */
-div {
-column-gap: 2px;
+#menu {
+    column-rule: dashed 2px rosybrown;
+
 }
 #menu {
     columns: 400px 2;
@@ -57,7 +59,7 @@ h2 {
         - Show each of the section headings of the menu  in small caps
         - set the font color to #6d4c41
 */
-head.small {
+h2  {
     font-variant: small-caps;
     color: #6d4c41;
 }
@@ -67,19 +69,17 @@ head.small {
         - Set the font size to 20px
         - Make the font bold
 */
-menu dt{
+dt {
     font-size: 20px;
-    font: bold;
+ font-weight: bold;
 }
 dd {
     margin: 0 0 12px 0;
     display: flex;
 }
-
 .details {
-    order: 1;
+order: 1;
 }
-
 /* 
      Update the following ruleset (.price) to accomplish the following:
         - Show the price of each item in a large font
@@ -102,6 +102,8 @@ address {
     Add a CSS ruleset targeting the footer to accomplish the following:
         - Draw a 2px dashed rosybrown border
 */
-footer {
-    border-style: dashed 2px rosybrown;
+  footer {
+    border-style: dashed;
+    border-width: 2px;
+    color: rosybrown;
 }
